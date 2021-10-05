@@ -1,51 +1,63 @@
+
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  mode: 'universal',
+  /*
+  ** Headers of the page
+  */
   head: {
-    title: 'moneysheephk',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700%7CSchoolbell" },
+      { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
+      { rel: "stylesheet", href: "/assets/css/font-awesome.min.css" },
+      { rel: "stylesheet", href: "/assets/plugins/mediabox/mediabox.min.css" },
+      { rel: "stylesheet", href: "/assets/css/style.css" },
+      { rel: "stylesheet", href: "/assets/css/responsive.css" }
+    ],
+
+    script: [
+      { src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyB2D8wrWMY3XZnuHO6C31uq90JiuaFzGws", body: true },
+      { src: "/assets/plugins/mediabox/mediabox.min.js", body: true },
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  /*
+  ** Customize the progress-bar color
+  */
+  loading: { color: '#00c3ed', height: '4px' },
+  /*
+  ** Global CSS
+  */
   css: [
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  /*
+  ** Plugins to load before mounting the App
+  */
   plugins: [
   ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  /*
+  ** Nuxt.js dev-modules
+  */
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
   ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  /*
+  ** Nuxt.js modules
+  */
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
   ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  /*
+  ** Build configuration
+  */
   build: {
+    /*
+    ** You can extend webpack config here
+    */
+    extend (config, ctx) {
+    }
   }
 }
