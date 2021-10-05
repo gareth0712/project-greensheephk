@@ -1,0 +1,62 @@
+name: deploy to pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+
+      - name: Get npm cache directory path 🛠
+        id: npm-cache-dir-path
+        run: echo "::set-output name=dir::$(npm cache dir)"
+
+      - name: Cache node_modules 📦
+        uses: actions/cache@v2.1.4
+        id: npm-cache # use this to check for `cache-hit` (`steps.npm-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.npm-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: Install dependencies 👨🏻‍💻
+        run: npm i
+
+      - name: generate dist files
+        run: npm run generate
+
+      - name: clone pages repo
+        run: git clone https://github.com/gareth0712/project-moneysheephk-pages
+
+      - name: Copy files in dist to pages repo
+        run: cp -r ./dist/* ./project-moneysheephk-pages/
+
+      - name: commit changes
+        run: |
+          cd ./project-moneysheephk-pages
+          git add *
+          git commit -m "Update pages files"
+          git push
