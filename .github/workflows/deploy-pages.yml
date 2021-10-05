@@ -57,6 +57,12 @@ jobs:
       - name: commit changes
         run: |
           cd ./project-moneysheephk-pages
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add *
           git commit -m "Update pages files"
-          git push
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.TOKEN }}
