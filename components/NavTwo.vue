@@ -54,7 +54,7 @@
                           </div>
                           <div class="col-lg-3 col-md-4 col-sm-4">
                               <div class="urgent-call text-right">
-                                  <span><img src="/assets/img/icons/call.svg" class="svg" alt=""></span><a href="#">666 888 0000</a>
+                                  <span><img src="/assets/img/icons/call.svg" class="svg" alt="Contact Number"></span><a href="#" @click="openBrowser(whatsappLink)">+852 5440 7482</a>
                               </div>
                           </div>
                         <div class="mobile-nav">
@@ -97,14 +97,18 @@
       data(){
         return {
           sticky: false,
-          mobileToggle: false
+          mobileToggle: false,
+          whatsappLink: 'https://api.whatsapp.com/send?phone=85254407482&app=facebook&entry_point=page_cta&fbclid=IwAR155hKk6PZq-9X0jaivk57VMwjiRSJCj02Ej2IhHozW_Pkr2X9oVf56gM8'
         }
       },
       mounted() {
         window.addEventListener('scroll', this.handleScroll);
       },
       methods: {
-
+        openBrowser(link) {
+          if (!link) return;
+          window.open(link);
+        },
         handleScroll() {
           if (window.scrollY > 70) {
             this.sticky = true
