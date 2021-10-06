@@ -2431,10 +2431,6 @@ input.banner-form:nth-child(4) {
 /*=========================================
     14: our quality feature
 =========================================*/
-.our-quality-inner p {
-  font-size: 16px;
-  line-height: 30px;
-}
 .our-quality-right,
 .our-quality-left {
   width: 49%;
@@ -2478,9 +2474,10 @@ input.banner-form:nth-child(4) {
   margin-bottom: 31px;
 }
 .our-quality-inner p {
-  font-size: 16px;
+  font-size: 26px;
   line-height: 30px;
   margin-bottom: 53px;
+  font-family: 'genJyuuGothic-regular';
 }
 .our-quality-inner.bottle-detailes p {
   margin-bottom: 0;

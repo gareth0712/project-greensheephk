@@ -46,11 +46,6 @@
                           /></nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link to="#Service"
-                            >服務簡介<img src="/assets/img/line2.png" alt=""
-                          /></nuxt-link>
-                        </li>
-                        <li>
                           <nuxt-link to="#Blog"
                             >Blog <img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>

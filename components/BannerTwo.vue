@@ -13,6 +13,8 @@ export default {
 <style scoped>
 .banner-area-inner {
   padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #4eddad;
   min-height: 700px;
   height: 80vh;
 }
