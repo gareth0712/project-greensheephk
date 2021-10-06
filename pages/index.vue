@@ -3,8 +3,7 @@
     <NavTwo />
     <BannerTwo />
     <QualityArea />
-    <BottleDeliver />
-    <TestimonialTwo />
+    <ServiceDeliver />
     <Blog />
     <CallToAction />
     <Footer />
@@ -15,8 +14,7 @@ import NavTwo from '../components/NavTwo';
 import BannerTwo from '../components/BannerTwo';
 import Footer from '../components/Footer';
 import QualityArea from '../components/QualityArea';
-import BottleDeliver from '../components/BottleDeliver';
-import TestimonialTwo from '../components/TestimonialTwo';
+import ServiceDeliver from '../components/ServiceDeliver';
 import Blog from '../components/Blog';
 import CallToAction from '../components/CallToAction';
 export default {
@@ -24,8 +22,7 @@ export default {
     NavTwo,
     BannerTwo,
     QualityArea,
-    TestimonialTwo,
-    BottleDeliver,
+    ServiceDeliver,
     Blog,
     CallToAction,
     Footer

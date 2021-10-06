@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-120 pb-120 quality" style="background-image: url(/assets/img/qulity.png)">
+  <section id="About" class="pt-120 pb-120 quality" style="background-image: url(/assets/img/qulity.png)">
           <div class="container">
               <div class="row">
                   <div class="col-md-6 offset-md-6">

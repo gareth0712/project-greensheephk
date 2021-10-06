@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-120 pb-100 blue-bg">
+  <section id="Contact" class="pt-120 pb-100 blue-bg">
           <div class="container">
               <div class="row align-items-center">
                   <div class="col-md-8">

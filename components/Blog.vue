@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-120 pb-90 top-shape">
+  <section id="Blog" class="pt-120 pb-90 top-shape">
           <div class="container">
               <div class="row justify-content-center">
                   <div class="col-12">

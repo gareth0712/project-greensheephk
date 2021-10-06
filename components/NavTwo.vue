@@ -36,27 +36,27 @@
                       </div>
                       <ul>
                         <li class="active">
-                          <nuxt-link to="/"
+                          <nuxt-link to="#Banner"
                             >主頁<img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link to="/about"
+                          <nuxt-link to="#About"
                             >關於我們 <img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link to="#"
+                          <nuxt-link to="#Service"
                             >服務簡介<img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link to="#"
+                          <nuxt-link to="#Blog"
                             >Blog <img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>
                         </li>
                         <li>
-                          <nuxt-link to="/contact"
+                          <nuxt-link to="#Contact"
                             >聯絡我們<img src="/assets/img/line2.png" alt=""
                           /></nuxt-link>
                         </li>

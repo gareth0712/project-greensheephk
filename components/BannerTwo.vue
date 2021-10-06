@@ -1,5 +1,5 @@
 <template>
-  <div class="banner-area-inner">
+  <div id="Banner" class="banner-area-inner">
     <div class="banner-wrap home-banner2" />
   </div>
 </template>
