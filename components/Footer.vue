@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- footer -->
-    <footer class="footer secondery-bg">
+    <footer class="footer">
       <div class="footer-top pt-110 pb-70">
         <div class="container">
           <div class="row">
@@ -116,9 +116,18 @@ export default {
   justify-content: center;
 }
 
+.footer {
+  background-color: #02806f;
+}
+
+.follow-button {
+  background-color: #05668d;
+}
+
 .follow-button,
 .whatsapp,
 .email {
   cursor: pointer;
+  color: #f0f0f0 !important;
 }
 </style>
