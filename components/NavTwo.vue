@@ -79,31 +79,14 @@
               >
                 <li class="active has-sub-item">
                   <span class="submenu-button submenu-opened"></span
-                  ><a href="#">Home</a>
+                  ><a href="#Banner">主頁</a>
                 </li>
-                <li><nuxt-link to="/about">About</nuxt-link></li>
-                <li class="has-sub-item">
-                  <span class="submenu-button"></span><a href="#">Service</a>
-                  <ul>
-                    <li><nuxt-link to="/service">Service</nuxt-link></li>
-                    <li>
-                      <nuxt-link to="/service-details"
-                        >Service Details</nuxt-link
-                      >
-                    </li>
-                  </ul>
-                </li>
+                <li><nuxt-link to="#About">關於我們</nuxt-link></li>
                 <li class="has-sub-item">
                   <span class="submenu-button"></span>
-                  <a href="#">Blog</a>
-                  <ul>
-                    <li><nuxt-link to="/blog">Blog Layout</nuxt-link></li>
-                    <li>
-                      <nuxt-link to="/blog-details">Blog Details</nuxt-link>
-                    </li>
-                  </ul>
+                  <a href="#Blog">Blog</a>
                 </li>
-                <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+                <li><nuxt-link to="#Contact">聯絡我們</nuxt-link></li>
               </ul>
             </div>
           </div>
