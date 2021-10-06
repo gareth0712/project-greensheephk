@@ -1,50 +1,39 @@
 <template>
   <div>
-    <NavOne />
-    <BannerOne />
-    <FeatureArea />
-    <Video />
+    <NavTwo />
+    <BannerTwo />
+    <QualityArea />
     <BottleDeliver />
-    <FeatureAreaTwo />
-    <AboutArea />
-    <Team />
-    <Subscribe />
-    <Testimonial />
-    <Location />
-    <ClientsLogo />
+    <TestimonialTwo />
+    <Blog />
+    <CallToAction />
     <Footer />
   </div>
 </template>
-
 <script>
-  import NavOne from "../components/NavOne";
-  import BannerOne from "../components/BannerOne";
-  import Footer from "../components/Footer";
-  import FeatureArea from "../components/FeatureArea";
-  import Video from "../components/Video";
-  import BottleDeliver from "../components/BottleDeliver";
-  import FeatureAreaTwo from "../components/FeatureAreaTwo";
-  import AboutArea from "../components/AboutArea";
-  import Team from "../components/Team";
-  import Subscribe from "../components/Subscribe";
-  import Testimonial from "../components/Testimonial";
-  import Location from "../components/Location";
-  import ClientsLogo from "../components/ClientsLogo";
-  export default {
-    components: {
-      ClientsLogo,
-      Location,
-      Testimonial,
-      Subscribe,
-      Team,
-      AboutArea,
-      FeatureAreaTwo,
-      BottleDeliver,
-      Video,
-      FeatureArea,
-      Footer,
-      BannerOne,
-      NavOne
-    }
+import NavTwo from '../components/NavTwo';
+import BannerTwo from '../components/BannerTwo';
+import Footer from '../components/Footer';
+import QualityArea from '../components/QualityArea';
+import BottleDeliver from '../components/BottleDeliver';
+import TestimonialTwo from '../components/TestimonialTwo';
+import Blog from '../components/Blog';
+import CallToAction from '../components/CallToAction';
+export default {
+  components: {
+    NavTwo,
+    BannerTwo,
+    QualityArea,
+    TestimonialTwo,
+    BottleDeliver,
+    Blog,
+    CallToAction,
+    Footer
+  },
+  head() {
+    return {
+      title: 'Money Sheep 懶羊羊理財'
+    };
   }
+};
 </script>
