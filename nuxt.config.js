@@ -12,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.icon' },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700%7CSchoolbell" },
       { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
       { rel: "stylesheet", href: "/assets/css/font-awesome.min.css" },
@@ -33,7 +33,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
+  css: ['@/static/assets/fonts/GenJyuuGothic/GenJyuuGothic.css'
   ],
   /*
   ** Plugins to load before mounting the App

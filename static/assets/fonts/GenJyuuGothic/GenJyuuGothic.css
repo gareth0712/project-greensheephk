@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'genJyuuGothic-regular';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Regular.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-bold';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Bold.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-extraLight';
+  src: url(/assets/fonts/GenJyuuGothic/genJyuuGothic-extraLight.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-heavy';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Heavy.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-light';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Light.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-medium';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Medium.ttf)
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'genJyuuGothic-normal';
+  src: url(/assets/fonts/GenJyuuGothic/GenJyuuGothic-Normal.ttf)
+    format('truetype');
+}
