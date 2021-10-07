@@ -3412,11 +3412,9 @@ img.svg {
   width: 40%;
 }
 
-.mobile-nav ul {
-  background: #081340;
-  list-style: none;
+.mobile-nav {
   margin: 0;
-  padding: 10px;
+  display: flex;
 }
 
 .mobile-nav {

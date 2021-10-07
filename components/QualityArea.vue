@@ -72,4 +72,70 @@ h2::after {
   width: 40%;
   max-width: 400px;
 }
+
+@media (max-width: 991.98px) {
+  #About {
+    min-height: 850px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #b5e61d;
+  }
+
+  .title {
+    margin-bottom: 48px;
+  }
+
+  .container {
+    max-width: 100%;
+    min-height: 900px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 100%;
+    min-height: 900px;
+    padding: 30px;
+  }
+
+  .about-logo {
+    width: fit-content;
+    margin: 0px;
+    max-width: 600px;
+  }
+
+  .about-text {
+    margin-top: 60px;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #About {
+    min-height: 700px;
+  }
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .container {
+    max-width: 100%;
+    min-height: 700px;
+  }
+
+  .about-text {
+    margin-top: 40px;
+    width: fit-content;
+  }
+}
 </style>

@@ -32,7 +32,7 @@
                         id="menu-button"
                         class=""
                       >
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars" />
                       </div>
                       <ul>
                         <li class="active">
@@ -64,30 +64,29 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-4">
               <div class="urgent-call text-right">
-                <span
-                  ><img
-                    src="/assets/img/icons/call.svg"
-                    class="svg"
-                    alt="Contact Number"/></span
-                ><a href="#" @click="openBrowser(whatsappLink)">5440 7482</a>
+                <a class="contact-number" @click="openBrowser(whatsappLink)"
+                  >5440 7482</a
+                >
               </div>
             </div>
             <div class="mobile-nav">
-              <ul
-                :style="`display: ${mobileToggle ? 'block' : 'none'}`"
+              <div
+                :style="`display: ${mobileToggle ? 'flex' : 'none'}`"
                 class="open"
               >
-                <li class="active has-sub-item">
-                  <span class="submenu-button submenu-opened"></span
-                  ><a href="#Banner">主頁</a>
-                </li>
-                <li><nuxt-link to="#About">關於我們</nuxt-link></li>
-                <li class="has-sub-item">
-                  <span class="submenu-button"></span>
+                <div class="mobile-item" @click="closeMenu">
+                  <a href="#Banner">主頁</a>
+                </div>
+                <div class="mobile-item" @click="closeMenu">
+                  <a href="#About">關於我們</a>
+                </div>
+                <div class="mobile-item" @click="closeMenu">
                   <a href="#Blog">Blog</a>
-                </li>
-                <li><nuxt-link to="#Contact">聯絡我們</nuxt-link></li>
-              </ul>
+                </div>
+                <div class="mobile-item" @click="closeMenu">
+                  <a href="#Contact">聯絡我們</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -112,6 +111,9 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    closeMenu() {
+      this.mobileToggle = false;
+    },
     openBrowser(link) {
       if (!link) return;
       window.open(link);
@@ -140,5 +142,28 @@ a {
   font-family: 'genJyuuGothic-regular';
   font-size: 20px;
   line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  .contact-number {
+    display: none;
+  }
+
+  .mobile-item {
+    width: fit-content;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .mobile-item :hover {
+    color: white;
+  }
+
+  .open {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
