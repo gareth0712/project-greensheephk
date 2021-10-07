@@ -1,7 +1,7 @@
 {
-  "name": "mineralo",
+  "name": "project-moneysheephk",
   "version": "1.0.0",
-  "description": "Mineralo - Vue Nuxt Bottled Water Delivery Service Template",
+  "description": "MoneySheep 懶羊羊理財",
   "author": "Layerdrops",
   "private": true,
   "scripts": {
