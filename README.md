@@ -1,5 +1,10 @@
 # moneysheephk
 
+## To be used by the following repos
+
+- https://github.com/gareth0712/project-moneysheephk-pages
+- https://github.com/moneysheephk/moneysheephk.github.io
+
 ## Build Setup
 
 ```bash
