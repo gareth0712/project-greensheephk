@@ -18,7 +18,7 @@
                         class="follow-button"
                         @click="openBrowser(instagramLink)"
                       >
-                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-instagram" />
                       </a>
                     </li>
                     <li>
@@ -26,7 +26,7 @@
                         class="follow-button"
                         @click="openBrowser(facebookLink)"
                       >
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook" />
                       </a>
                     </li>
                     <!-- <li>
@@ -34,7 +34,7 @@
                         class="follow-button"
                         @click="openBrowser(youtubeLink)"
                       >
-                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-youtube" />
                       </a>
                     </li> -->
                   </ul>
@@ -51,9 +51,12 @@
                 </div>
                 <div class="footer-contact-info">
                   <div class="whatsapp" @click="openBrowser(whatsappLink)">
+                    <i class="fa fa-whatsapp" />
                     5440 7482
                   </div>
-                  <a class="email" :href="`mailto:${email}`">{{ email }}</a>
+                  <a class="email" :href="`mailto:${email}`"
+                    ><i class="fa fa-envelope" />{{ email }}</a
+                  >
                 </div>
               </div>
               <!-- End of footer widget -->
@@ -67,7 +70,7 @@
 
     <!-- back to top -->
     <div @click="scrollTop" :class="`back-to-top ${scrollBtn ? 'show' : ''}`">
-      <a href="#"><i class="fa fa-chevron-up"></i></a>
+      <a href="#"><i class="fa fa-chevron-up"/></a>
     </div>
     <!-- back to top -->
   </div>
@@ -111,8 +114,17 @@ export default {
 </script>
 
 <style scoped>
+.footer-widget {
+  min-width: 260px;
+}
+
 .row {
   justify-content: center;
+}
+
+.fa-whatsapp,
+.fa-envelope {
+  margin-right: 8px;
 }
 
 .footer {
