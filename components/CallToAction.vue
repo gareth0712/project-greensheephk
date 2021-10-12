@@ -6,15 +6,13 @@
           <!-- cta title -->
           <div class="callto-heading">
             <span class="schoolbell">做好風險管理 讓財富穩健增長</span>
-            <h2 class="text-blue">
-              立即聯絡我們<br />讓我們為你訂制累積財富的計劃
-            </h2>
+            <h2 class="text-blue">立即登記<br />領取你的專屬累積財富方案</h2>
           </div>
           <!-- cta title -->
         </div>
         <div class="col-md-4">
           <div class="call-action-btn text-right">
-            <div @click="openBrowser(whatsappLink)" class="btn">聯絡我們</div>
+            <div @click="openBrowser(whatsappLink)" class="btn">立即登記</div>
           </div>
         </div>
       </div>

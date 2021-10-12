@@ -16,9 +16,9 @@
                     <li>
                       <a
                         class="follow-button"
-                        @click="openBrowser(twitterLink)"
+                        @click="openBrowser(instagramLink)"
                       >
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
                       </a>
                     </li>
                     <li>
@@ -29,14 +29,14 @@
                         <i class="fa fa-facebook"></i>
                       </a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a
                         class="follow-button"
                         @click="openBrowser(youtubeLink)"
                       >
                         <i class="fa fa-youtube"></i>
                       </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -53,9 +53,7 @@
                   <div class="whatsapp" @click="openBrowser(whatsappLink)">
                     5440 7482
                   </div>
-                  <a class="email" href="mailto:moneysheephk2021@gmail.com"
-                    >moneysheephk2021@gmail.com</a
-                  >
+                  <a class="email" :href="`mailto:${email}`">{{ email }}</a>
                 </div>
               </div>
               <!-- End of footer widget -->
@@ -81,10 +79,11 @@ export default {
   data() {
     return {
       scrollBtn: false,
+      email: 'moneysheephk@gmail.com',
       whatsappLink:
         'https://api.whatsapp.com/send?phone=85254407482&app=facebook&entry_point=page_cta&fbclid=IwAR155hKk6PZq-9X0jaivk57VMwjiRSJCj02Ej2IhHozW_Pkr2X9oVf56gM8',
       facebookLink: 'https://www.facebook.com/moneysheephk',
-      twitterLink: '',
+      instagramLink: 'https://instagram.com/moneysheephk',
       youtubeLink: ''
     };
   },

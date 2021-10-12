@@ -1,13 +1,34 @@
 <template>
   <div id="Banner" class="banner-area-inner">
     <div class="banner-wrap home-banner2" />
-    <img src="/banner_mobile.png" class="alternate-banner" />
+    <img src="/banner_mobile.png" class="alternate-banner" v-if="isMobile" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BannerTwo'
+  name: 'BannerTwo',
+  data() {
+    return {
+      isMobile: false
+    };
+  },
+  methods: {
+    handleResize() {
+      if (window.outerWidth <= 991) {
+        if (!this.isMobile) this.isMobile = true;
+        return;
+      }
+      if (this.isMobile) this.isMobile = false;
+    }
+  },
+  mounted() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  }
 };
 </script>
 

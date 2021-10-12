@@ -65,7 +65,7 @@
             <div class="col-lg-3 col-md-4 col-sm-4">
               <div class="urgent-call text-right">
                 <a class="contact-number" @click="openBrowser(whatsappLink)"
-                  >5440 7482</a
+                  ><i class="fa fa-whatsapp"></i>5440 7482</a
                 >
               </div>
             </div>
@@ -132,6 +132,10 @@ export default {
 <style scoped>
 .main-header.header-style2 {
   background-color: #4eddad;
+}
+
+.fa-whatsapp {
+  margin-right: 8px;
 }
 
 .main-logo {
