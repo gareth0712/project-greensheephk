@@ -1,25 +1,25 @@
 <template>
   <div>
-    <NavTwo />
-    <BannerTwo />
-    <QualityArea />
-    <Blog />
+    <Nav />
+    <Banner />
     <CallToAction />
+    <About />
+    <Blog />
     <Footer />
   </div>
 </template>
 <script>
-import NavTwo from '../components/NavTwo';
-import BannerTwo from '../components/BannerTwo';
+import Nav from '../components/Nav';
+import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import QualityArea from '../components/QualityArea';
+import About from '../components/About';
 import Blog from '../components/Blog';
 import CallToAction from '../components/CallToAction';
 export default {
   components: {
-    NavTwo,
-    BannerTwo,
-    QualityArea,
+    Nav,
+    Banner,
+    About,
     Blog,
     CallToAction,
     Footer
