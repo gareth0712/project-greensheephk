@@ -1,9 +1,13 @@
 # moneysheephk
 
-## To be used by the following repos
+- This repo stores the source code of the Nuxt SPA for the website https://moneysheephk.com
+- Commits to main branch will trigger Github Action to Build the Nuxt application and push to [this repo](https://github.com/gareth0712/project-moneysheephk-pages)
+- When it's time for deployment to the domain, will make use of another account to fetch commits and auto deploy to the domain  
+  https://github.com/moneysheephk/moneysheephk.github.io
 
-- https://github.com/gareth0712/project-moneysheephk-pages
-- https://github.com/moneysheephk/moneysheephk.github.io
+## Domain name
+
+- https://moneysheephk.com
 
 ## Build Setup
 
